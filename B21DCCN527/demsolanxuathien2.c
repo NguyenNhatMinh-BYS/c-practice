@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<stdio.h>
+int main(){
+	int a,j,t,f=1;
+	scanf("%d",&t);
+	while(t--){
+	
+	scanf("%d",&a);
+	
+	int arr[a],i,brr[a],c[a],d;
+	
+	
+	for(i=0;i<a;i++){
+		scanf("%d",&arr[i]);
+		brr[i]=1;
+		
+	}
+	int e=0;
+	printf("Test %d:\n",f);
+	for(i=0;i<a;i++){
+		d=1;
+		
+		if(brr[i]){
+			for(j=i+1;j<a;j++){
+				if(arr[i]==arr[j]){
+
+					brr[j]=0;
+					
+					d++;
+					
+				}
+			}
+			
+			printf("%d xuat hien %d lan\n",arr[i],d);
+			
+		
+			
+		}
+		
+	}
+	f++;
+}
+	
+}
